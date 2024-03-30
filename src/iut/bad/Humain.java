@@ -1,6 +1,8 @@
 package iut.bad;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class Humain implements IConsommation {
@@ -9,6 +11,7 @@ public class Humain implements IConsommation {
 	private int age;
 	
 	private Set<Humain> amis = new HashSet<>();
+	private Map<Humain, Integer> dureeAmitie = new HashMap<>();  
 
 	Humain(String nom, String prenom, int age) {
 		this.nom = nom;
@@ -62,10 +65,19 @@ public class Humain implements IConsommation {
 	
 	public void ami(Humain h) {
 		amis.add(h);
+		dureeAmitie.put(h, 100);
+	}
+	
+	public void ami(Humain h, int duree) {
+		amis.add(h);
+		dureeAmitie.put(h, duree);
 	}
 	
 	public boolean estAmi(Humain h) {
 		return amis.contains(h);
 	}
 	
+	public int getDureeAmitie(Humain h) {
+		return dureeAmitie.get(h);
+	}
 }

@@ -16,9 +16,7 @@ public class Femme extends Humain {
 		Femme zenina = new Femme("Jaunne", "Zenina", 28);
 		
 		josy.ami(zenina);
+		josy.getDureeAmitie(zenina);
 		
-		if(josy.estAmi(zenina)) {
-			System.out.println("amis zareo");
-		}
 	}
 }
