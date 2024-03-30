@@ -1,9 +1,14 @@
 package iut.bad;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Humain implements IConsommation {
 	private String nom;
 	private String prenom;
 	private int age;
+	
+	private Set<Humain> amis = new HashSet<>();
 
 	Humain(String nom, String prenom, int age) {
 		this.nom = nom;
@@ -53,6 +58,14 @@ public class Humain implements IConsommation {
 	public void boire() {
 		// TODO Auto-generated method stub
 		// methode boire
+	}
+	
+	public void ami(Humain h) {
+		amis.add(h);
+	}
+	
+	public boolean estAmi(Humain h) {
+		return amis.contains(h);
 	}
 	
 }
