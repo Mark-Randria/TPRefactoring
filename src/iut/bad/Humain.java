@@ -42,5 +42,12 @@ public class Humain {
 	public String toString() {
 		return "Nom : " + nom + "Prenom : " + prenom + "Age : " + age;
 	}
-
+	
+	public void manger() {
+		// Methode manger
+	}
+	
+	public void boire() {
+		// Methode boire
+	}
 }
