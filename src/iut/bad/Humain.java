@@ -4,7 +4,7 @@ public class Humain {
 	private String nom;
 	private String prenom;
 	private int age;
-	
+
 	Humain(String nom, String prenom, int age) {
 		this.nom = nom;
 		this.prenom = prenom;
@@ -34,6 +34,9 @@ public class Humain {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
-	
+
+	public void details() {
+		System.out.println("Nom : " + nom + "Prenom : " + prenom + "Age : " + age);
+	}
+
 }
