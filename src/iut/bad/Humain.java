@@ -38,5 +38,9 @@ public class Humain {
 	public void details() {
 		System.out.println("Nom : " + nom + "Prenom : " + prenom + "Age : " + age);
 	}
+	
+	public String toString() {
+		return "Nom : " + nom + "Prenom : " + prenom + "Age : " + age;
+	}
 
 }
