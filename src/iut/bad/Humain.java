@@ -1,6 +1,6 @@
 package iut.bad;
 
-public class Humain {
+public class Humain implements IConsommation {
 	private String nom;
 	private String prenom;
 	private int age;
@@ -42,12 +42,17 @@ public class Humain {
 	public String toString() {
 		return "Nom : " + nom + "Prenom : " + prenom + "Age : " + age;
 	}
-	
+
+	@Override
 	public void manger() {
-		// Methode manger
+		// TODO Auto-generated method stub
+		// methode manger
+	}
+
+	@Override
+	public void boire() {
+		// TODO Auto-generated method stub
+		// methode boire
 	}
 	
-	public void boire() {
-		// Methode boire
-	}
 }
